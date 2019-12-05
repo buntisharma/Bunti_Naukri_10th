@@ -9,9 +9,9 @@ from builtins import dir
 import os
 import time
 import allure
-class MyTestSuite():
+#class MyTestSuite():
 #@pytest.fixture()
 def test_runsuite(self):
         driver = InitiateDriver.teststartBrowser()
         nau=Main_Page.enter_creadential(self)
-test_runsuite(self)
+test_runsuite()

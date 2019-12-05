@@ -1,3 +1,6 @@
 {
-  "TestCases/test_job.py": true
+  "TestCases/test_Unit.py": true,
+  "TestCases/test_job.py": true,
+  "TestCases/test_log.py": true,
+  "TestSuites/test_UnitR.py": true
 }
