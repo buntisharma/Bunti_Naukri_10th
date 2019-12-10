@@ -1,4 +1,6 @@
 from selenium.webdriver import Chrome
+from selenium.webdriver.chrome import webdriver
+
 from Library import ConfigReader
 Conn=ConfigReader
 class test_BrowserDriver:
