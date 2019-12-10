@@ -20,7 +20,7 @@ class test_job():
         #self.driver=sc.take_page_sreenshot("ghjk")
         log = test_ApplyJob
         # self.driver=log=Jobs.test_ApplyJob()
-        self.driver=log.test_popmodal(self)
+        #self.driver=log.test_popmodal(self)
         self.driver = log.test_searchjob(self)
         # self.log.test_searchjob(driver)
         return test_job()
