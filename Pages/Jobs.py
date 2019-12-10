@@ -6,7 +6,7 @@ from Library import ConfigReader
 
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import Select
+from selenium.webdriver.support.select import Select
 import time
 
 class test_ApplyJob():
@@ -25,5 +25,7 @@ class test_ApplyJob():
         self.driver.find_element_by_xpath(ConfigReader.test_searchlocal("Search", 'xpa')).click()
         #self.driver.find_element_by_class_name(ConfigReader.test_PopUpmodal("Popup", "Later")).click()
         self.driver.find_element_by_class_name(ConfigReader.test_searchlocal("Search", "Skill")).send_keys("python")
-        self.driver.find_element_by_class_name(ConfigReader.test_searchlocal("Search", "Location")).send_keys("Chandigarh")
-        self.driver.find_element_by_class_name(ConfigReader.test_searchlocal("Search", "Experience")).click()
+        self.driver.find_element_by_xpath(ConfigReader.test_searchlocal("Search", "Location")).send_keys("Chandigarh")
+        self.driver.find_element_by_xpath(ConfigReader.test_searchlocal("Search", "Experience")).click()
+        time.sleep(3)
+
