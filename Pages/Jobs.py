@@ -13,14 +13,16 @@ class test_ApplyJob():
     def __init__(self,driver):
         self.driver = driver
 
-    def test_popmodal(self):
-        time.sleep(10)
-        self.driver.switch_to_alert()
-        time.sleep(5)
+    #def test_popmodal(self):
+        #time.sleep(10)
+        #self.driver.switch_to_alert()
+        #time.sleep(5)
         #print(self.text)
-        self.driver.find_element_by_class_name(ConfigReader.test_PopUpmodal("Popup","Later")).click()
+        #self.driver.find_element_by_class_name(ConfigReader.test_PopUpmodal("Popup","Later")).click()
 
     def test_searchjob(self):
+        time.sleep(10)
+        self.driver.find_element_by_xpath(ConfigReader.test_searchlocal("Search", 'xpa')).click()
         #self.driver.find_element_by_class_name(ConfigReader.test_PopUpmodal("Popup", "Later")).click()
         self.driver.find_element_by_class_name(ConfigReader.test_searchlocal("Search", "Skill")).send_keys("python")
         self.driver.find_element_by_class_name(ConfigReader.test_searchlocal("Search", "Location")).send_keys("Chandigarh")
