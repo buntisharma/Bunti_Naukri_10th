@@ -11,7 +11,6 @@ from Pages.Jobs import test_ApplyJob
 #from ScreenShot.teakS import test_Screenshot
 from ScreenShot.teakS import take_page_sreenshot
 
-
 class test_job():
     def test_srchjob(self):
         bd = test_BrowserDriver()
@@ -22,7 +21,7 @@ class test_job():
         # self.driver=log=Jobs.test_ApplyJob()
         #self.driver=log.test_popmodal(self)
         self.driver = log.test_searchjob(self)
-        # self.log.test_searchjob(driver)
+        #self.log.test_searchjob(driver)
         return test_job()
 
 

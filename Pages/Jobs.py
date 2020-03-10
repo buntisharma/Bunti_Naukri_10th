@@ -26,6 +26,7 @@ class test_ApplyJob():
         #self.driver.find_element_by_class_name(ConfigReader.test_PopUpmodal("Popup", "Later")).click()
         self.driver.find_element_by_class_name(ConfigReader.test_searchlocal("Search", "Skill")).send_keys("python")
         self.driver.find_element_by_xpath(ConfigReader.test_searchlocal("Search", "Location")).send_keys("Chandigarh")
+        #drp=Select(self.driver.find_element_by_xpath(ConfigReader.test_searchlocal("Search", "Experience")))
+        #drp.select_by_visible_text('a3')
         self.driver.find_element_by_xpath(ConfigReader.test_searchlocal("Search", "Experience")).click()
-        time.sleep(3)
-
+        #time.sleep(3)
